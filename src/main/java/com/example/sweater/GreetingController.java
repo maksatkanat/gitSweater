@@ -43,7 +43,7 @@ public class GreetingController {
     public String filter(@RequestParam String filter, Map<String, Object> model){
         List<Message> messages = messageRepo.findByTag(filter);
         model.put("messages",messages);
-        return "main";
+        return "filter";
     }
 
 }
