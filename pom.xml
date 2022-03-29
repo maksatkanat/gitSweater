@@ -46,6 +46,11 @@
 			<artifactId>mysql-connector-mxj</artifactId>
 			<version>5.0.12</version>
 		</dependency>
+		<!-- security -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
 	</dependencies>
 
 	<build>
