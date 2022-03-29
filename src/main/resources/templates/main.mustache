@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<head>
+    <title>Main PAge</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<div>
+    <form method="post">
+        <input type="text" name="text" placeholder="text">
+        <input type="text" name="tag" placeholder="tag">
+        <input type="submit" name="submit" value="Add">
+    </form>
+    <div>Filter</div>
+    <form method="post" action="filter">
+        <input type="text" name="filter">
+        <input type="submit" name="submit" value="find">
+    </form>
+</div>
+<div>Message List</div>
+    {{#messages}}
+        <div>
+            <b>{{id}}</b>
+            <span>{{text}}</span>
+            <i>{{tag}}</i>
+        </div>
+    {{/messages}}
+</body>
+</html>
