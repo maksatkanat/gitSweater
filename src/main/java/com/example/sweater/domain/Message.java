@@ -11,6 +11,7 @@ public class Message {
     @GeneratedValue(strategy = GenerationType.AUTO) private Integer id;
     private String text;
     private String tag;
+    private User author;
 
     public Message() {
     }
@@ -43,4 +44,8 @@ public class Message {
     public void setTag(String tag) {
         this.tag = tag;
     }
+
+    public User getAuthor() { return author;  }
+
+    public void setAuthor(User author) { this.author = author;}
 }
